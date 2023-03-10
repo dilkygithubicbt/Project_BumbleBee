@@ -1,0 +1,29 @@
+.header{
+ width: 100%;
+ background-color: brown;
+}
+
+.navbar{
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
+  
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
+  
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
+  
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
+  
+    background:radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
+
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    
+}
+
+/* .a1{
+    height: 80px;
+    width: 100%;
+} */
