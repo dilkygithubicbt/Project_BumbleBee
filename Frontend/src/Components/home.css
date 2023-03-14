@@ -2,9 +2,11 @@
     background-color: #1e1b1b;
 }
 
-h1{
+p{
     color: #81AFBB;
-}
+    font-size: 60px;
+    font-weight: bold;
+} 
 
 .a1{
     text-align: center;

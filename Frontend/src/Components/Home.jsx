@@ -8,19 +8,38 @@ class Home extends Component {
         this.state = {
              
         }
+        this.cusRegistration = this.cusRegistration.bind(this);
     }
 
+    cusRegistration(){
+        this.props.history.push('/register-customer');
+    }
+    
     render() {
         return (
             <div>
                 <div class="container">
                     <div class="row">
-                    <div> 
-                        
-                    </div>
+                   
                         <div class="col-sm">
-                            <h1> Buy First pay later !</h1>
-                            <button></button>
+                            <p> Buy First pay later !</p>
+                            
+                           <table>
+                            <th>
+                                <div class="col-sm">
+                                <button className='btn btn-primary reg' onClick={this.cusRegistration}> Register </button>
+                                </div>
+                                </th>
+                                <th>
+                               
+                                <div class="col-sm">
+                                <button className='btn btn-primary' onClick={this.admin} style={{marginLeft: "10px"}}> Admin </button>
+                                </div>
+                                     
+                                </th>
+                                </table>
+                                
+                            
                         </div>
     
                         <div class="col-sm">
@@ -29,8 +48,9 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    </div>
+                    </div>
+           
         );
     }
 }
