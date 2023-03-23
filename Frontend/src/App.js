@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-import '../src/Components/header.css'
-import {BrowserRouter as Router, Switch} from 'react-router-dom'
+import '../src/Components/header.css';
 import Home from './Components/Home';
-import HeaderComponent from './Components/HeaderComponent';
-import FooterComponent from './Components/FooterComponent';
+import RegisterCustomerComponent from './Components/RegisterCustomerComponent';
+import AdminComponent from './Components/AdminComponent';
+import {
+    BrowserRouter,
+    Routes,
+    Route
+} from "react-router-dom";
+import HeaderComponent from "./Components/HeaderComponent";
 
 function App() {
-  return (
-    <div className='main'>
-       <HeaderComponent />
-        <div className="container">
-            <div className="container">
-                  <Home />
-            </div>
-            </div>
-          <FooterComponent />
-        
-    </div>
-  );
+    return (
+        <div className='main'>
+            <BrowserRouter>
+                <Routes>
+
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/home" element={<Home/>}></Route>
+                    <Route path="/register" element={<RegisterCustomerComponent/>}></Route>
+                    <Route path="/admin" element={<AdminComponent/>}></Route>
+                    {/*<FooterComponent />*/}
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

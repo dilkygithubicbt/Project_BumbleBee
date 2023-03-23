@@ -6,7 +6,7 @@ class HeaderComponent extends Component {
         super(props)
 
         this.state = {
-                
+
         }
     }
 
@@ -17,8 +17,8 @@ class HeaderComponent extends Component {
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                         <div id='a1'>
                         </div>
-                    
-                    <div> <a href="https://javaguide.net" className="navbar-brand " id="a2">Bumble Bee</a> </div>
+
+                    <div> <a href="/home" className="navbar-brand " id="a2">Bumble Bee</a> </div>
                     </nav>
                 </header>
             </div>
