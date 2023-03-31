@@ -8,8 +8,7 @@ import FooterComponent from "./FooterComponent";
 const Home = () => {
 
     const navigate = useNavigate();
-
-
+    
     return (
 
         <div>
@@ -33,7 +32,7 @@ const Home = () => {
 
                                 <div class="col-sm">
                                     <button className="btn btn-danger"
-                                             onClick={() => navigate("/admin")}>Admin
+                                             onClick={() => navigate("/login")}>Admin
                                     </button>
 
                                 </div>
