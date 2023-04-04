@@ -14,6 +14,11 @@ public class Product {
     private String ProductCategory;
     private String ProductPrice;
     private String Description;
+    private String filePath;
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
 
     public Long getId() {
         return id;
@@ -53,5 +58,9 @@ public class Product {
 
     public void setDescription(String description) {
         Description = description;
+    }
+
+    public String getFilePath() {
+        return filePath;
     }
 }
