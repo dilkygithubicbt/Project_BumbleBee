@@ -12,10 +12,11 @@ const AddProduct = () => {
         productName: "",
         productCategory: "",
         productPrice: "",
-        description: ""
+        description: "",
+        filename: ""
     })
 
-    const { productName, productCategory, productPrice, description } = product
+    const { productName, productCategory, productPrice, description, filename } = product
 
     const onInputChange = (e) => {
         setProduct({ ...product, [e.target.name]: e.target.value });
@@ -33,43 +34,43 @@ const AddProduct = () => {
             <hr />
             <div className='container'>
                 <div className='row'>
-                    <div className='card col-md-6 offset-md3 offset-md-3'>
-                        <h3 className='text-center'> Add product to store </h3>
+                    <div className='card col-md-6 offset-md3 offset-md-3 shadow-lg p-3 mb-5 bg-white rounded'>
+                        <h3 className='navbar-brand text-success logo h2 align-self-center'> Add or edit products </h3>
                         <div className='card-body'>
-                            <form onSubmit={(e)=> onSubmit(e)}>
+                            <form onSubmit={(e) => onSubmit(e)}>
                                 <div className='form-group'>
                                     <label htmlFor="FirstName"> Product Name:</label>
-                                    <input type={"text"} placeholder='Product Name' value={productName} name='productName' className='form-control' onChange={(e) => onInputChange(e)}/>
+                                    <input type={"text"} placeholder='Enter product name' required value={productName} name='productName' className='form-control' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="LastName"> Product Category:</label>
-                                    <input placeholder='Product Category' value={productCategory} name='productCategory' className='form-control' onChange={(e) => onInputChange(e)}/>
+                                    <input placeholder='Enter product category' value={productCategory} required name='productCategory' className='form-control' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="Email"> Product Price:</label>
-                                    <input placeholder='Product Price' value={productPrice} name='productPrice' className='form-control' onChange={(e) => onInputChange(e)}/>
+                                    <input placeholder='Enter product price' required value={productPrice} name='productPrice' className='form-control' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="ContactNo"> Description:</label>
-                                    <input placeholder='Description' value={description} name='description' className='form-control' onChange={(e) => onInputChange(e)}/>
+                                    <input placeholder='Enter description' required value={description} name='description' className='form-control' onChange={(e) => onInputChange(e)} />
                                 </div>
-
                                 <div className='form-group'>
                                     <hr />
                                 </div>
 
                                 <div className='form-group'>
                                     <button type="submit" className="btn btn-success" >Save</button>
-                                    <Link type="submit" className="btn btn-danger" style={{ marginLeft: "10px" }}>Cancel</Link>
+                                    <Link type="submit" className="btn btn-danger" style={{ marginLeft: "10px" }}  onClick={() => navigate("/admin")}>Cancel</Link>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr />
             <FooterComponent />
         </div>
     );

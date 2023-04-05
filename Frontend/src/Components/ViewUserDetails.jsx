@@ -40,8 +40,8 @@ const ViewUserDetails = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='card col-md-6 offset-md3 offset-md-3'>
-                        <h3 className='text-center'> User Details </h3>
-                        <div className='card-body'>
+                        <h3 className='navbar-brand text-success logo h2 align-self-center'> User Details </h3>
+                        <div className='card-body shadow-lg p-3 mb-5 bg-white rounded'>
                             <form>
                                 <div className='form-group'>
                                     <label className='text-center' htmlFor="FirstName" name='firstName'> First Name: {firstName}</label>

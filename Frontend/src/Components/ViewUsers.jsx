@@ -28,7 +28,7 @@ const ViewUsers = () => {
             <div className="container">
 
                 <div className="py-4">
-                <h3 className='text-center'> User List</h3>
+                <h3 className='navbar-brand text-success logo h2 align-self-center text-center'> User List</h3>
                     <hr />
                     <table className="table border shadow">
                         <thead>

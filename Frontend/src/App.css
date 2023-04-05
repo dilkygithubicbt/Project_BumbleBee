@@ -24,6 +24,11 @@
   color: white;
 }
 
+.navbar-brand {
+  padding-left: 20px;
+}
+
+
 .App-link {
   color: #61dafb;
 }
@@ -41,7 +46,7 @@ body {
   background: var(--color-bg);
 }
 
-.navbar{
+/*.navbar{
   background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
 
   background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
@@ -59,7 +64,7 @@ body {
   height: 80px;
   width: 100%;
   
-}
+}*/
 
 .footer {
   background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 83, 119, 1) 0%, rgba(0, 27, 45, 1) 100%);
@@ -83,5 +88,6 @@ body {
 }
 
 .main{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  
 }

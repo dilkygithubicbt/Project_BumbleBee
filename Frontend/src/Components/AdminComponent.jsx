@@ -14,6 +14,7 @@ const AdminComponent = () => {
 
     useEffect(() => {
         loadProducts();
+
     }, []);
 
     const loadProducts = async () => {
@@ -28,16 +29,16 @@ const AdminComponent = () => {
 
     return (
         <div>
-            <HeaderComponent />
+            <HeaderComponent isHiddenBtn={false} />
 
             <div className="container">
 
                 <div className="py-4">
 
-                    <button className="btn btn-primary "
+                    <button className="btn btn-success "
                         onClick={() => navigate("/addproduct")}>Add Product
                     </button>
-                    <button className="btn btn-primary " style={{float : 'right', paddingRight : '5px'}}
+                    <button className="btn btn-success " style={{float : 'right', paddingRight : '5px'}}
                         onClick={() => navigate("/viewUsers")}>View User List
                     </button>
                     <hr />

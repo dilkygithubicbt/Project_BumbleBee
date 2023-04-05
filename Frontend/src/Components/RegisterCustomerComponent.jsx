@@ -30,37 +30,37 @@ const RegisterCustomerComponent = () => {
 
     return (
         <div>
-            <HeaderComponent />
+            <HeaderComponent isHiddenBtn={true} />
             <hr />
             <div className='container'>
                 <div className='row'>
-                    <div className='card col-md-6 offset-md3 offset-md-3'>
-                        <h3 className='text-center'> Register Customer </h3>
+                    <div className='card col-md-6 offset-md3 offset-md-3 shadow-lg p-3 mb-5 bg-white rounded'>
+                        <h3 className='navbar-brand text-success logo h2 align-self-center'> Register Customer </h3>
                         <div className='card-body'>
                             <form onSubmit={(e)=> onSubmit(e)}>
                                 <div className='form-group'>
                                     <label htmlFor="FirstName"> First Name:</label>
-                                    <input type={"text"} placeholder='First Name' value={firstName} name='firstName' className='form-control' onChange={(e) => onInputChange(e)} />
+                                    <input type={"text"} placeholder='Enter your first name' value={firstName} name='firstName' required className='form-control mt-1' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="LastName"> Last Name:</label>
-                                    <input placeholder='Last Name' value={lastName} name='lastName' className='form-control' onChange={(e) => onInputChange(e)} />
+                                    <input placeholder='Enter your last name' value={lastName} name='lastName' required className='form-control mt-1' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="Email"> Email:</label>
-                                    <input placeholder='Email' value={email} name='email' className='form-control' onChange={(e) => onInputChange(e)} />
+                                    <input placeholder=' Enter your email' value={email} name='email' required className='form-control mt-1' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="ContactNo"> Contact No:</label>
-                                    <input placeholder='Contact No' value={mobile} name='mobile' className='form-control' onChange={(e) => onInputChange(e)} />
+                                    <input placeholder='Enter your contact No' value={mobile} name='mobile' required className='form-control mt-1' onChange={(e) => onInputChange(e)} />
                                 </div>
 
                                 <div className='form-group'>
                                     <label htmlFor="Address"> Address:</label>
-                                    <input placeholder='Address' value={address} name='address' className='form-control' onChange={(e) => onInputChange(e)} />
+                                    <input placeholder='Enter your address' value={address} name='address' required className='form-control mt-1' onChange={(e) => onInputChange(e)} />
                                 </div>
                                 
                                 <div className='form-group'>
@@ -69,13 +69,14 @@ const RegisterCustomerComponent = () => {
 
                                 <div className='form-group'>
                                     <button type="submit" className="btn btn-success" >Save</button>
-                                    <Link type="submit" className="btn btn-danger" style={{ marginLeft: "10px" }}>Cancel</Link>
+                                    <Link type="submit" className="btn btn-danger" style={{ marginLeft: "10px" }} onClick={() => navigate("/home")}>Cancel</Link>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr />
             <FooterComponent />
         </div>
     );

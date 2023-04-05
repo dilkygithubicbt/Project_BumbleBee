@@ -44,8 +44,8 @@ const EditProduct = () => {
             <hr />
             <div className='container'>
                 <div className='row'>
-                    <div className='card col-md-6 offset-md3 offset-md-3'>
-                        <h3 className='text-center'> Add product to store </h3>
+                    <div className='card col-md-6 offset-md3 offset-md-3 shadow-lg p-3 mb-5 bg-white rounded'>
+                        <h3 className='navbar-brand text-success logo h2 align-self-center'> Add or edit product </h3>
                         <div className='card-body'>
                             <form onSubmit={(e) => onSubmit(e)}>
                                 <div className='form-group'>
